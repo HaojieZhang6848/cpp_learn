@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "configurePresets": [
+        {
+            "name": "vcpkg",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+            }
+        },
+        {
+            "name": "zhj-debug",
+            "inherits": "vcpkg",
+            "environment": {
+                "VCPKG_ROOT": "/home/huajuan/vcpkg"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "zhj",
+            "inherits": "vcpkg",
+            "environment": {
+                "VCPKG_ROOT": "/home/huajuan/vcpkg"
+            },
+            "cacheVariables": {
+            }
+        }
+    ]
+}
