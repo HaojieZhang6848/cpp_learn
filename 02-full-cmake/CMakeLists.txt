@@ -10,6 +10,7 @@ find_package(fmt CONFIG REQUIRED)
 find_package(boost_filesystem CONFIG REQUIRED)
 find_package(boost_json CONFIG REQUIRED)
 find_package(spdlog CONFIG REQUIRED)
+find_package(cpr CONFIG REQUIRED)
 
 # 添加 include 路径
 include_directories(${PROJECT_SOURCE_DIR}/include)

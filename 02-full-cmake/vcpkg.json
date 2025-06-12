@@ -2,6 +2,25 @@
   "dependencies": [
     "fmt",
     "boost",
-    "spdlog"
+    "spdlog",
+    "cpr"
+  ],
+  "overrides": [
+    {
+      "name": "fmt",
+      "version": "11.0.2"
+    },
+    {
+      "name": "spdlog",
+      "version": "1.15.2"
+    },
+    {
+      "name": "boost",
+      "version": "1.87.0"
+    },
+    {
+      "name": "cpr",
+      "version": "1.11.1"
+    }
   ]
 }
